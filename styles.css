@@ -1,0 +1,227 @@
+@import 'reset.css';
+
+body {
+    color: black;
+    background-color: #A9A9A9;
+
+
+    height: 100vh;
+    width: 100vw;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  */
+
+.main {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* borders 
+top
+left
+right
+bottom
+
+border-radius = bordas arredondadas*/
+.content {
+    background-color: white;
+    height: 100%;
+    width: 35%;
+}
+
+.header {
+    height: 12px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.header img {
+    width: 36px;
+    height: 12px;
+}
+
+.background {
+    background-image: url(_resource/blackfriday-bg-emails.png);
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.live {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.live img {
+    width: 90px;
+    height: 12px;
+}
+
+.text {
+    color: white;
+    Weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 8px;
+    width: 300px;
+    height: 8px;
+    font-size: 20px;
+}
+
+.align-counter {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 50px;
+    height: 40px;
+    font-size: 35px;
+}
+
+.text2 {
+    color: #9D7700;
+    font-size: 8px;
+}
+
+.paragraph {
+    color: #61686A;
+    width: 90%;
+    height: 110px;
+    padding: 22px;
+    padding-block-end: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 18px;
+    font-size: 12px;
+}
+
+.schedule {    
+    background-color: #F9F9F9;
+    width: 93%;
+    height: 65px;
+    padding: 22px;
+}
+
+.text3 {
+    border-left: 4px solid #FFC000;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+    gap: 12px;
+    padding: 16px;
+    font-size: 12px;
+    color: #61686A
+}
+
+.paragraph2 {
+    color: #61686A;
+    width: 100%;
+    height: 110px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-size: 12px;
+    gap: 22px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px;
+}
+
+.button button {
+    background-color: #FFC200;
+    border-radius: 4px;
+    border: none;
+    color: black;
+    padding: 6px 17px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.paragraph3 {
+    width: 100%;
+    height: 50px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    font-size: 12px;
+    color: #61686A;
+}
+
+.baseboard {
+    background-color: #313336;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.baseboard img {
+    width: 40px;
+    height: 40px;
+}
+
+.baseboard-end {
+    color: #B1B7C4;
+    width: 100%;
+    height: 50px;
+    padding-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+.baseboard-end a{
+    color: #4DB6D9;
+}
