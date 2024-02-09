@@ -2,7 +2,7 @@
 
 body {
     color: black;
-    background-color: #A9A9A9;
+    background-color: #F0F0F0;
 
 
     height: 100vh;
@@ -65,25 +65,29 @@ border-radius = bordas arredondadas*/
     width: 35%;
 }
 
+.header-percentage {
+    width: 100%;
+    height: 25%;
+}
+
 .header {
-    width: 96%;
-    height: 1%;
+    height: 10%;
     display: flex;
-    padding: 15px 14px 19px;
+    align-items: center;
 }
 
 .header img{
-    width: 36px;
+    width: 43px;
     height: 14px;
 }
 
 .background {
+    height: 83%;
     background-image: url(_resource/blackfriday-bg-emails.png);
-    width: 100%;
-    height: 18%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     color: white;
     font-size: 18px;
 }
@@ -91,16 +95,13 @@ border-radius = bordas arredondadas*/
 .background img {
     width: 80px;
     height: 13px;
-    padding-top: 22px;
 }
 
 .text1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 20px;
     font-size: 22px;
-    padding-top: 16px;
     gap: 6px;
 }
 
@@ -112,7 +113,6 @@ border-radius = bordas arredondadas*/
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 43px;
     gap: 11px;
 }
 
@@ -132,34 +132,44 @@ border-radius = bordas arredondadas*/
     font-size: 7px;
 }
 
+.body-percentage {
+    width: 100%;
+    height: 60%;
+}
+
 .paragraph {
-    width: 93%;
-    height: 8%;
-    font-size: 16px;
+    width: 100%;
+    height: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph-text1 {
+    width: 90%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     color: #65666A;
-    padding: 24px;
-    padding-top: 54px;
-    word-spacing: 2px;
+
 }
 
 .schedule {
-    width: 93%;
-    height: 8%;
+    height: 20%;
     background-color: #F9F9F9;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    padding: 22px;
+    align-items: center;
+    justify-content: center;
     color: #65666A;
 }
 
 .schedule-text {    
+    width: 86%;
     font-size: 16px;
     border-left: solid 4px #FFC200;
-    padding: 16px;
+    padding: 12px;
     padding-top: 12px;
     gap: 2px;
     display: flex;
@@ -167,20 +177,21 @@ border-radius = bordas arredondadas*/
 }
 
 .paragraph2 {
-    width: 93%;
-    height: 10%;
+    width: 100%;
+    height: 30%;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    padding: 22px;
+    align-items: center;
+    justify-content: center;
     gap: 4px;
     color: #65666A;
 }
 
 .counter-p2 {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
 }
 
 .counter-p2 div img{
@@ -188,12 +199,12 @@ border-radius = bordas arredondadas*/
 }
 
 .button {
+    height: 8%;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: black;   
-    padding-top: 15px;
-    padding-bottom: 15px;
+    color: black;
 }
 
 .button button {
@@ -214,25 +225,31 @@ border-radius = bordas arredondadas*/
 }
 
 .paragraph3 {
-    width: 93%;
-    height: 5%;
-    padding: 22px;
+    width: 100%;
+    height: 15%;
     font-size: 16px;
     color: #65666A;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 3px;
 }
 
 .paragraph3-text {
+    width: 90%;
     display: flex;
     flex-direction: column;
 }
 
+.baseboard-pecentage {
+    width: 100%;
+    height: 15%;
+}
 
 .baseboard {
     width: 100%;
-    height: 5%;
+    height: 40%;
     background-color: #313336;
     display: flex;
     flex-direction: row;
@@ -247,14 +264,16 @@ border-radius = bordas arredondadas*/
 }
 
 .baseboard-end {
+    background-color: #F0F0F0;
     width: 100%;
-    height: 5%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     font-size: 12px;
     align-items: center;
     justify-content: center;
 }
+
 .blue {
     color: #4EB9DC;
     font-size: 12px;
