@@ -332,10 +332,7 @@ border-radius = bordas arredondadas*/
         display: flex;
         padding-left: 8px;
     }
-        
-
-
-
+    
 }
 
 @media screen and (max-width: 720px){
