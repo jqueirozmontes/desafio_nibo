@@ -1,4 +1,3 @@
-
 function atualizarContador() {
     const dataAlvo = new Date('2024-09-12T23:59:59'); // Substitua pela sua data
     const agora = new Date();

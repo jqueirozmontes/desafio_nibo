@@ -53,7 +53,7 @@
             <div class="body-percentage">
                 <div class="paragraph">
                     <div class="paragraph-text1">
-                        <span>Olá, {{contact.firstname}}. Tudo bem ?</span>
+                        <span id="nome">Olá, {{contact.firstname}}. Tudo bem ?</span>
                         <div>
                             <span>Para começar a Black Week BPO do Nibo, Eliandro Prado, sócio da OmegaPrice,</span>
                             </br>
@@ -67,8 +67,7 @@
                 <div class="schedule">
                     <div class="schedule-text">
                         <span class="bold">Já anota na agenda!</span> </br>
-                        <span>A live vai acontecer no dia <span class="bold">23/11</span> (segunda-feira) às <span
-                                class="bold">17h (horário de Brasília).</span></span>
+                        <span>A live vai acontecer no dia <span class="bold">23/11</span> (segunda-feira) às <span class="bold">17h (horário de Brasília).</span></span>
                     </div>
                 </div>
 
@@ -127,26 +126,35 @@
 
     <script>
         function atualizarContador() {
-            const dataAlvo = new Date('2024-09-12T23:59:59'); // Substitua pela sua data
+            const dataAlvo = new Date('2024-11-23T23:59:59'); // Substitua pela sua data
             const agora = new Date();
-            const totalSegundos = Math.floor((dataAlvo - agora) / 1000);
-    
-            const dias = Math.floor((totalSegundos % (7 * 24 * 60 * 60)) / (24 * 60 * 60));
+            const totalSegundos = Math.floor((dataAlvo - agora) / 1000); // Corrigido para 1000
+
+            const dias = Math.floor(totalSegundos / (24 * 60 * 60));
             const horas = Math.floor((totalSegundos % (24 * 60 * 60)) / (60 * 60));
             const minutos = Math.floor((totalSegundos % (60 * 60)) / 60);
             const segundos = totalSegundos % 60;
-    
+
             document.getElementById('segundos').textContent = String(segundos).padStart(2, '0');
             document.getElementById('dias').textContent = String(dias).padStart(2, '0');
             document.getElementById('horas').textContent = String(horas).padStart(2, '0');
             document.getElementById('minutos').textContent = String(minutos).padStart(2, '0');
         }
-    
+
         setInterval(atualizarContador, 1000); // Atualiza a cada segundo
         atualizarContador(); // Chamada inicial
+
+        function exibirNomeTela() {
+            let campoNome = prompt(`Qual o seu nome?`);
+            let nome = document.getElementById('nome').textContent = `Seja bem-vindo, ${campoNome}. Tudo bem ?`; // Exibe a mensagem na página
+            console.log(nome); // Exibe a mensagem no console
+        }
+
+        // Chama a função ao carregar a página
+        exibirNomeTela()
     </script>
 
-    
-    </body>
+
+</body>
 
 </html>
